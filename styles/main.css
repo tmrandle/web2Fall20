@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(68, 68, 199);
+    font-family: sans-serif;
+}
