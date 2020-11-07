@@ -346,8 +346,6 @@ template {
 
 header {
   height: 80px;
-  margin: 0px;
-  padding: 0px;
   background-color: #1f191a;
 }
 
@@ -360,7 +358,7 @@ header img {
 header h1 {
   float: right;
   text-align: center;
-  margin: 27px 150px 15px 5px;
+  margin: 27px 180px 15px 5px;
   color: White;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.25em;
@@ -382,7 +380,7 @@ nav ul {
 nav li {
   display: inline-block;
   width: 69px;
-  padding: 5px;
+  padding: 2px;
   margin: 0px 5px 10px 0px;
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;

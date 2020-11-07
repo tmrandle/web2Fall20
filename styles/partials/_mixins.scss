@@ -1,0 +1,16 @@
+@mixin btn() {
+    height: 30px;
+    width: 150px;
+    margin: 0px 130px 5px 110px;
+    padding: 25px 25px 15px 25px;
+    color: $whiteTextColor;
+    font-family: $smallFont;
+    font-size: $headerFont;
+    background-color: $darkBackground;
+    border-radius: 8px;
+    &:hover {
+        background-color: lighten($darkBackground,15%);
+        cursor: pointer;
+    }
+
+}
