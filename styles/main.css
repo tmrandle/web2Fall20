@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -339,5 +340,32 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    color: blue;
+  }
+}
+
+header {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  background-color: #1f191a;
+}
+
+header h1 {
+  margin: 20px 150px 15px 5px;
+  text-align: center;
+  color: White;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.25em;
+  float: right;
+}
+
+header img {
+  float: left;
+  margin: 10px 10px 0px 15px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */
