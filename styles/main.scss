@@ -3,27 +3,150 @@
 @import "./partials/_colors.scss";
 @import "./partials/_typography.scss";
 
-
-//Big Screens
-@media (min-width:1024px){
-    h1{
-        color:blue;
+@mixin btn() {
+    height: 30px;
+    width: 150px;
+    margin: 5px 130px 5px 130px;
+    padding: 25px 25px 15px 25px;
+    color: $whiteTextColor;
+    font-family: $smallFont;
+    font-size: $headerFont;
+    background-color: $darkBackground;
+    border-radius: 8px;
+    &:hover {
+        background-color: lighten($darkBackground,15%);
+        cursor: pointer;
     }
+
 }
+
 
 header{
-   
-    margin: 0px 0px 10px 0px;
+    height: 80px;
+    margin: 0px;
     padding: 0px;
-    background-color: $headerBackground;
+    background-color: $darkBackground;
+    img{
+        display: inline-block;
+        margin: 10px;
+        border-radius: 50%;
+    }
 
     h1{
-        display: inline-block;
-        margin: 20px 150px 15px 5px;
+        float: right;
         text-align: center;
-        color: $headerTextColor;
+        margin: 27px 150px 15px 5px;
+        color: $whiteTextColor;
         font-family: $headerFont;
         font-size: $headerTextSize;
-    
+        font-weight: 500px;
     }
 }
+
+nav{
+    margin: 10px 0px;
+    padding: 2px;
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        float: left;
+    }
+
+    li{
+        display: inline-block;
+        width: 69px;
+        padding: 5px;
+        margin: 0px 5px 10px 0px;
+        text-align: center;
+        font-family: $smallFont;
+        font-size: $smallTextSize;
+    }
+
+    a{
+        text-decoration: none;
+        color: $navTextColor;
+    }
+}
+
+.hero{
+    figure{
+        height: 200px;
+        width: 414px;
+        margin: 10px;
+        padding: 10px;
+    }
+    p{
+        height: 100px;
+        width: 414px;
+        margin: 15px;
+        padding: 10px;
+        text-align: center;
+        font-family: $smallFont;
+    }
+    .button {
+        @include btn();
+    }
+}
+
+.pics{
+    height: 320px;
+    width: 414px;
+    margin: 15px 15px 0px 15px;
+    padding: 10px 10px 0px 10px;
+    background-color: $picBackground;
+    border-top: 1px solid rgba(55,55,55,0.2);
+    display: grid;
+    grid-template-columns: 165px 165px;
+    grid-template-rows: 110px 110px;
+    grid-gap: 45px;
+}
+
+.gridImage{
+    height: 110px;
+    width: 165px;
+    margin: 5px 0px;
+    padding: 20px 20px 0px 20px;
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+    height: 25px;
+    background-color: $darkBackground;
+
+    p{
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    color: $whiteTextColor;
+    font-size: $smallTextSize;
+    font-family: $smallFont;
+    }
+}
+//Medium Screens and up
+@media (min-width: 768px) {
+   
+    header h1{
+        color: $medSHeaderColor;
+    } 
+    .hero .button{
+        color: $medSHeaderColor;
+    }
+}
+
+//Big Screens
+@media (min-width: 1024px){
+    
+    header h1{
+        color: $bigSHeaderColor;
+    }
+    .hero .button {
+        color: $bigSHeaderColor;
+    }
+}
+
+
+
+
+
