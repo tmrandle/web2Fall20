@@ -12,21 +12,18 @@
 }
 
 header{
+   
     margin: 0px 0px 10px 0px;
     padding: 0px;
     background-color: $headerBackground;
+
     h1{
+        display: inline-block;
         margin: 20px 150px 15px 5px;
         text-align: center;
         color: $headerTextColor;
         font-family: $headerFont;
         font-size: $headerTextSize;
-        float: right;
-    }
-
-    img{
-        float: left;
-        margin: 10px 10px 0px 15px;
-        border-radius: 50%;
+    
     }
 }
