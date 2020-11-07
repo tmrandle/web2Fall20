@@ -396,15 +396,15 @@ nav a {
 .hero figure {
   height: 200px;
   width: 414px;
-  margin: 10px;
-  padding: 10px;
+  margin: 10px 0px;
+  padding: 10px 0px;
 }
 
 .hero p {
   height: 100px;
-  width: 414px;
-  margin: 15px;
-  padding: 10px;
+  width: 374px;
+  margin: 15px 0px 5px 0px;
+  padding: 10px 20px;
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -412,7 +412,7 @@ nav a {
 .hero .button {
   height: 30px;
   width: 150px;
-  margin: 5px 130px 5px 130px;
+  margin: 0px 130px 5px 110px;
   padding: 25px 25px 15px 25px;
   color: White;
   font-family: "Noto Sans JP", sans-serif;
@@ -429,8 +429,8 @@ nav a {
 .pics {
   height: 320px;
   width: 414px;
-  margin: 15px 15px 0px 15px;
-  padding: 10px 10px 0px 10px;
+  margin: 15px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   background-color: rgba(213, 210, 210, 0.75);
   border-top: 1px solid rgba(55, 55, 55, 0.2);
   display: -ms-grid;
