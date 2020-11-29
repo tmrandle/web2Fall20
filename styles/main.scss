@@ -16,6 +16,12 @@ header{
         display: inline-block;
         margin: 10px;
         border-radius: 50%;
+        transition: scale ease-in;
+        &:hover,
+        &:focus {
+            transform: scale(1.25, 1.25);
+            cursor: pointer;
+        }
     }
 
     h1{
@@ -26,8 +32,11 @@ header{
         font-family: $largeFont;
         font-size: $largeTextSize;
         font-weight: 500px;
+        
     }
 }
+
+
 
 nav{
     margin: 10px 0px;
@@ -47,6 +56,8 @@ nav{
         text-align: center;
         font-family: $smallFont;
         font-size: $smallTextSize;
+      
+         
     }
 
     a{
@@ -124,13 +135,39 @@ footer{
 //Big Screens
 @media (min-width: 1024px){
     
-    header h1{
+    header {
+    //    display: flex;
+    //     flex-flow: row nowrap; 
+
+         h1{
         color: $bigSHeaderColor;
-    }
-    .hero .button {
-        color: $bigSHeaderColor;
-    }
+        // justify-content: space-around;
+        // align-content: center;
+        }
+    .hero{
+        display: grid;
+        .button {
+            color: $bigSHeaderColor;
+        }
+        .hero .heroGrid{
+            display: grid;
+            grid-template-rows: 250px 100px;
+            grid-template-columns: 440px 440px;
+            gap: 50px;
+           
+        }
+
+    //    .button {
+    //         color: $bigSHeaderColor;
+    //     }
+      
 }
+
+}   
+    
+}
+
+
 
 
 

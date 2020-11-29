@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css" type="text/css">
     <!--This links to my external stylesheet-->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!--this links to the animate.css library-->
+
     <title>Web 2 Fall 2020</title>
 </head>
 
@@ -12,8 +19,8 @@
 <body>
     
     <header>
-		<img src="assets/images/logo.png" alt="Logo">
-		<h1>NVC COFFEE STORE</h1>
+		<img class="animatedLogo" src="assets/images/logo.png" alt="Logo">
+		<h1 class="animate__animated animate__bounceInDown">NVC COFFEE STORE</h1>
 	</header>	
 		
 		<nav>
@@ -27,13 +34,21 @@
         </nav>
         
         <main>
-            <section class="hero">
+            <div class="hero">
+                <div class="heroGrid">
+                 
                 <figure>
                     <img src="assets/images/hero1.png" alt="Hero Picture">
                 </figure>
+               
+              
                 <p>Rich, est redeye id sweet turkish aftertaste robust single origin mocha.  Kopi-luwak id coffee con panna, breve dripper brewed java trifecta white to go.  So foam cremea, agter taste, spoon sweet caffeine organic acerbic.</p>
+            
+             
                 <p class="button">Click Here</p>
-            </section>
+               
+                </div> <!--heroGrid-->
+            </div>
             
             <section id="navLinks">
                 <div class="pics">

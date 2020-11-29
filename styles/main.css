@@ -353,6 +353,14 @@ header img {
   display: inline-block;
   margin: 10px;
   border-radius: 50%;
+  -webkit-transition: scale ease-in;
+  transition: scale ease-in;
+}
+
+header img:hover, header img:focus {
+  -webkit-transform: scale(1.25, 1.25);
+          transform: scale(1.25, 1.25);
+  cursor: pointer;
 }
 
 header h1 {
@@ -418,11 +426,15 @@ nav a {
   font-size: "Noto Sans KR", sans-serif;
   background-color: #1f191a;
   border-radius: 8px;
+  -webkit-transition: scale ease-in;
+  transition: scale ease-in;
 }
 
 .hero .button:hover {
   background-color: #493b3e;
   cursor: pointer;
+  -webkit-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
 }
 
 .pics {
@@ -477,8 +489,21 @@ footer p {
   header h1 {
     color: blue;
   }
-  .hero .button {
+  header .hero {
+    display: -ms-grid;
+    display: grid;
+  }
+  header .hero .button {
     color: blue;
+  }
+  header .hero .hero .heroGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 250px 100px;
+        grid-template-rows: 250px 100px;
+    -ms-grid-columns: 440px 440px;
+        grid-template-columns: 440px 440px;
+    gap: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
