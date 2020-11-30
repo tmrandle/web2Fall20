@@ -134,39 +134,68 @@ footer{
 
 //Big Screens
 @media (min-width: 1024px){
+   
     
     header {
-    //    display: flex;
-    //     flex-flow: row nowrap; 
+       display: flex;
+       flex-flow: row nowrap; 
+  
+        height: 80px;
+        width: 100%;
+        justify-content: space-around;
+        align-content: center;
 
          h1{
-        color: $bigSHeaderColor;
+            color: $bigSHeaderColor;
         // justify-content: space-around;
         // align-content: center;
         }
-    .hero{
-        display: grid;
-        .button {
-            color: $bigSHeaderColor;
-        }
-        .hero .heroGrid{
-            display: grid;
-            grid-template-rows: 250px 100px;
-            grid-template-columns: 440px 440px;
-            gap: 50px;
-           
-        }
-
-    //    .button {
-    //         color: $bigSHeaderColor;
-    //     }
-      
+    
+     
 }
 
-}   
+.hero .button {
+    color: $bigSHeaderColor;
+}
+.heroGrid{
+    height: 450px;
+    width: 100%;
+    margin: 50px;
+    display: grid;
+    grid-template-rows: 250px 100px;
+    grid-template-columns: 440px 440px;
+    justify-content:center;
+    align-content: center;
+    gap: 50px;
+   
+}
+nav ul{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
     
 }
 
+.pics{
+    height: 200px;
+    width: 100%;
+    // padding: 10px 10px 10px 10px;
+
+    //  gap: 70px;
+    // grid-template-columns: repeat(4, 165px);
+    display: flex;
+    // justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: base;
+}
+
+    
+   
+
+}
 
 
 

@@ -486,24 +486,71 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    height: 80px;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
   header h1 {
     color: blue;
   }
-  header .hero {
-    display: -ms-grid;
-    display: grid;
-  }
-  header .hero .button {
+  .hero .button {
     color: blue;
   }
-  header .hero .hero .heroGrid {
+  .heroGrid {
+    height: 450px;
+    width: 100%;
+    margin: 50px;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 250px 100px;
         grid-template-rows: 250px 100px;
     -ms-grid-columns: 440px 440px;
         grid-template-columns: 440px 440px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     gap: 50px;
+  }
+  nav ul {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .pics {
+    height: 200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: base;
+        align-content: base;
   }
 }
 /*# sourceMappingURL=main.css.map */
