@@ -135,7 +135,9 @@ footer{
 //Big Screens
 @media (min-width: 1024px){
    
-    
+    // .mainWrapper{
+    //     padding: 0px 50px;
+    // }
     header {
        display: flex;
        flex-flow: row nowrap; 
@@ -143,12 +145,12 @@ footer{
         height: 80px;
         width: 100%;
         justify-content: space-around;
-        align-content: center;
+        align-items: center;
 
          h1{
             color: $bigSHeaderColor;
         // justify-content: space-around;
-        // align-content: center;
+        // align-items: center;
         }
     
      
@@ -165,7 +167,7 @@ footer{
     grid-template-rows: 250px 100px;
     grid-template-columns: 440px 440px;
     justify-content:center;
-    align-content: center;
+    align-items: center;
     gap: 50px;
    
 }
@@ -185,11 +187,14 @@ nav ul{
 
     //  gap: 70px;
     // grid-template-columns: repeat(4, 165px);
+    //the above code didn't do what I expected.  It was close, but left the left and right margins different in size.
+    //the code below seemed to fix the issue.  This needs to go in the parent container, not the child container to work.
+    
     display: flex;
     // justify-content: center;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-content: base;
+    align-items: baseline;
 }
 
     

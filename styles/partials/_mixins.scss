@@ -10,7 +10,7 @@
     border-radius: 8px;
     transition: scale ease-in;
     &:hover {
-        background-color: lighten($darkBackground,15%);
+        background-color: lighten($darkBackground, 15%);
         cursor: pointer;
         transform: scale(1.08, 1.08);
     }
